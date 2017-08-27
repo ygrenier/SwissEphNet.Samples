@@ -15,15 +15,32 @@ namespace SwissEphNet.Samples.WinForms46
         public Form1()
         {
             InitializeComponent();
+            pbProgress.Visible = false;
         }
 
-        private void btnRunTest_Click(object sender, EventArgs e)
+        void RunTest()
         {
             var provider = new WinFormsTestProvider();
             using (var swetest = new SwephTest(provider))
             {
                 swetest.RunTest();
                 tbResult.Text = provider.OutputContent.ToString();
+            }
+        }
+
+        private void btnRunTest_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                btnRunTest.Enabled = false;
+                pbProgress.Visible = true;
+                tbResult.Clear();
+                RunTest();
+            }
+            finally
+            {
+                btnRunTest.Enabled = true;
+                pbProgress.Visible = false;
             }
         }
     }
