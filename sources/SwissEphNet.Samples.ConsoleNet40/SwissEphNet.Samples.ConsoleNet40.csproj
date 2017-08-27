@@ -35,7 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SwissEphNet, Version=2.6.0.21, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SwissEphNet.2.6.0.21-beta1\lib\net40\SwissEphNet.dll</HintPath>
+      <HintPath>..\packages\SwissEphNet.2.6.0.21\lib\net40\SwissEphNet.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

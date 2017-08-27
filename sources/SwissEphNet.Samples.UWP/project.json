@@ -1,7 +1,7 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-    "SwissEphNet": "2.6.0.21-beta1"
+    "SwissEphNet": "2.6.0.21"
   },
   "frameworks": {
     "uap10.0": {}
