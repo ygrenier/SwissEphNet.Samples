@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <Button xmlns:a="http://schemas.android.com/tools"
+          android:id="@+id/btnRunTest"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Run test" />
+  <Button xmlns:a="http://schemas.android.com/tools"
+          android:id="@+id/btnRunTestLoadAsync"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Run test load async" />
+  <Button xmlns:a="http://schemas.android.com/tools"
+            android:id="@+id/btnRunTestAsync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run test async" />
+  <ProgressBar xmlns:a="http://schemas.android.com/tools"
+               android:id="@+id/pbProgressBar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:indeterminate="true" />
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+        >
+    <HorizontalScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+        >
+      <TextView
+          android:id="@+id/tbResult"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+  </ScrollView>
+</LinearLayout>

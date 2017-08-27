@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissEphNet.Samples.Univers
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissEphNet.Samples.Universal.WindowsPhone", "SwissEphNet.Samples.Universal\SwissEphNet.Samples.Universal.WindowsPhone\SwissEphNet.Samples.Universal.WindowsPhone.csproj", "{A3950FA6-D15A-4252-9D95-155BB34AEEEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissEphNet.Samples.Droid", "SwissEphNet.Samples.Droid\SwissEphNet.Samples.Droid.csproj", "{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{1571e34f-52dc-4946-9bff-3e4a2d850eec}*SharedItemsImports = 13
@@ -45,6 +47,7 @@ Global
 		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{a3950fa6-d15a-4252-9d95-155bb34aeeec}*SharedItemsImports = 4
 		SwissEphNet.Samples.Universal\SwissEphNet.Samples.Universal.Shared\SwissEphNet.Samples.Universal.Shared.projitems*{a3950fa6-d15a-4252-9d95-155bb34aeeec}*SharedItemsImports = 4
 		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{c175a727-2351-4bde-9afc-54367a739237}*SharedItemsImports = 4
+		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{d3efc9f4-18ea-4b6d-87f7-74aa6511c32c}*SharedItemsImports = 4
 		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{df42b472-ba2d-4f55-a73b-825059b232ba}*SharedItemsImports = 4
 		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{e3005677-5709-4b1d-add5-e8cb872b4b87}*SharedItemsImports = 4
 		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{f0d0db39-003e-4b02-9a61-97fd19527d35}*SharedItemsImports = 4
@@ -193,6 +196,30 @@ Global
 		{A3950FA6-D15A-4252-9D95-155BB34AEEEC}.Release|x86.ActiveCfg = Release|x86
 		{A3950FA6-D15A-4252-9D95-155BB34AEEEC}.Release|x86.Build.0 = Release|x86
 		{A3950FA6-D15A-4252-9D95-155BB34AEEEC}.Release|x86.Deploy.0 = Release|x86
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|ARM.Build.0 = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|ARM.Deploy.0 = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|x64.Build.0 = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|x86.Build.0 = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|ARM.Build.0 = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|ARM.Deploy.0 = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|x64.ActiveCfg = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|x64.Build.0 = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|x64.Deploy.0 = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|x86.ActiveCfg = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|x86.Build.0 = Release|Any CPU
+		{D3EFC9F4-18EA-4B6D-87F7-74AA6511C32C}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

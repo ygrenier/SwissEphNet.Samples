@@ -12,7 +12,7 @@ namespace SwissEphNet.Samples
         /// <summary>
         /// Date of the test
         /// </summary>
-        public DateTime Date { get; set; } = new DateTime(2017, 8, 27, 10, 33, 12);
+        public DateTime Date { get; set; } = DateTime.Now;
 
         /// <summary>
         /// Ephemeris time or Universal Time of the date

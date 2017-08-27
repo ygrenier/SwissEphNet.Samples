@@ -100,3 +100,16 @@ Windows 8.1 + WindowsPhone 8.1 applications.
 
 Works like UWP application.
 
+## Project SwissEphNet.Samples.Droid
+
+Android (Monodroid) application.
+
+Works like WinForm application.
+
+**Beware**: the data files are added to the projet as Assets, but the
+InputStream used to read an asset don't support the `get_Position()`,
+so an error is raised while reading the data files. To prevent this problem
+the `DroidTestProvider` copy the asset into a `MemoryStream`. So it
+could be a problem to use assets has data for a real application because
+all is loaded in memory.
+
