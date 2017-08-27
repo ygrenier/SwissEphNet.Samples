@@ -31,10 +31,7 @@ Unfortunally the SwissEphNet library is not async, and can't be it (too complex 
 Fortunally we have a solution: wait the result. But beause the async context can changed the
 risk is to create an interlock freeze.
 
-In general the solution is to change the async context by a code of this type:
-```csharp
-var file = Task.Run(async () => await LoadFileAsync(filename)).Result;
-```
+An explaination is available on the [`Loading files` wiki page](https://github.com/ygrenier/SwissEphNet/wiki/Loading-files#works-in-an-async-context).
 
 ## Project SwissEphNet.Samples.ConsoleNet40
 
@@ -112,4 +109,8 @@ so an error is raised while reading the data files. To prevent this problem
 the `DroidTestProvider` copy the asset into a `MemoryStream`. So it
 could be a problem to use assets has data for a real application because
 all is loaded in memory.
+
+## Project SwissEphNet.Samples.iOS
+
+Because I don't have a Mac computer I can't make a iOS project.
 
