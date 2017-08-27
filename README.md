@@ -24,6 +24,18 @@ private void SwissEph_OnLoadFile(object sender, LoadFileEventArgs e)
 }
 ```
 
+## Async context
+
+Unfortunally the SwissEphNet library is not async, and can't be it (too complex to implements).
+
+Fortunally we have a solution: wait the result. But beause the async context can changed the
+risk is to create an interlock freeze.
+
+In general the solution is to change the async context by a code of this type:
+```csharp
+var file = Task.Run(async () => await LoadFileAsync(filename)).Result;
+```
+
 ## Project SwissEphNet.Samples.ConsoleNet40
 
 Console application in .Net 4.0.
@@ -49,7 +61,12 @@ files using the `WinFormsTestProvider`.
 - **Run test load async** : This test use the `WinFormsTestProviderAsync`
 wich simulate an async loading file, but the call is sync
 - **Run test async**: this test use the `WinFormsTestProviderAsync`
-wich simulate an async loading file and the test is run in a task
+wich simulate an async loading file and the test is run in a task so in 
+an async mode
+
+The `WinFormsTestProviderAsync` make a pause on each loading file to
+simulate a long time running and see the blocking or non-blocking of the main 
+thread.
 
 A progress bar is displayed to show the test running. In the 2 first cases
 this progress bar don't move because the test run in the main thread. For
