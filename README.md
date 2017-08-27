@@ -78,3 +78,19 @@ is not blocked.
 WPF application in .Net 4.6.
 
 Works exactly like the WinForms sample.
+
+## Project SwissEphNet.Samples.UWP
+
+Universal Application.
+
+**BEWARE**: UWP use the NETStandard 1.0 version of the library, so to be
+compatible the UWP application need the 
+`Microsoft.NETCore.UniversalWindowsPlatform` at the version >=5.2.2.
+
+This sample run like the WinForms or WPF samples, but it has only two 
+tests because the files are read as async:
+
+- **Run test** : Works like the **Run test load async** WPF using the `UwpTestProvider`.
+- **Run test async**: this test use the `UwpTestProvider`
+and is run in a task so in an async mode
+
