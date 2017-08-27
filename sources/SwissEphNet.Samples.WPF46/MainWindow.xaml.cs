@@ -1,26 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
-namespace SwissEphNet.Samples.WinForms46
+namespace SwissEphNet.Samples.WPF46
 {
-    public partial class Form1 : Form
+    /// <summary>
+    /// Logique d'interaction pour MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
     {
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
-            pbProgress.Visible = false;
+            pbProgress.Visibility = Visibility.Collapsed;
         }
 
         void RunTest()
         {
-            var provider = new WinFormsTestProvider();
+            var provider = new WpfTestProvider();
             using (var swetest = new SwephTest(provider))
             {
                 swetest.RunTest();
@@ -29,7 +37,7 @@ namespace SwissEphNet.Samples.WinForms46
         }
         void RunTestLoadAsync()
         {
-            var provider = new WinFormsTestProviderAsync();
+            var provider = new WpfTestProviderAsync();
             using (var swetest = new SwephTest(provider))
             {
                 swetest.RunTest();
@@ -38,7 +46,7 @@ namespace SwissEphNet.Samples.WinForms46
         }
         async Task RunTestAsync()
         {
-            var provider = new WinFormsTestProviderAsync();
+            var provider = new WpfTestProviderAsync();
             using (var swetest = new SwephTest(provider))
             {
                 await Task.Run(() => swetest.RunTest());
@@ -48,22 +56,22 @@ namespace SwissEphNet.Samples.WinForms46
 
         private void StartRun()
         {
-            btnRunTest.Enabled = false;
-            btnRunTestLoadAsync.Enabled = false;
-            btnRunTestAsync.Enabled = false;
-            pbProgress.Visible = true;
+            btnRunTest.IsEnabled = false;
+            btnRunTestLoadAsync.IsEnabled = false;
+            btnRunTestAsync.IsEnabled = false;
+            pbProgress.Visibility = Visibility.Visible;
             tbResult.Clear();
         }
 
         private void EndRun()
         {
-            btnRunTest.Enabled = true;
-            btnRunTestLoadAsync.Enabled = true;
-            btnRunTestAsync.Enabled = true;
-            pbProgress.Visible = false;
+            btnRunTest.IsEnabled = true;
+            btnRunTestLoadAsync.IsEnabled = true;
+            btnRunTestAsync.IsEnabled = true;
+            pbProgress.Visibility = Visibility.Collapsed;
         }
 
-        private void btnRunTest_Click(object sender, EventArgs e)
+        private void btnRunTest_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -76,7 +84,7 @@ namespace SwissEphNet.Samples.WinForms46
             }
         }
 
-        private void btnRunTestLoadAsync_Click(object sender, EventArgs e)
+        private void btnRunTestLoadAsync_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -89,7 +97,7 @@ namespace SwissEphNet.Samples.WinForms46
             }
         }
 
-        private async void btnRunTestAsync_Click(object sender, EventArgs e)
+        private async void btnRunTestAsync_Click(object sender, RoutedEventArgs e)
         {
             try
             {

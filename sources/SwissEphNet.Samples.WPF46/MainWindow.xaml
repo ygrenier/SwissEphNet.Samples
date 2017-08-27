@@ -1,0 +1,32 @@
+﻿<Window x:Class="SwissEphNet.Samples.WPF46.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwissEphNet.Samples.WPF46"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        Title="Swiss Ephemeris Tests" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnRunTest" Click="btnRunTest_Click" Content="Run test" Margin="2" />
+            <Button x:Name="btnRunTestLoadAsync" Click="btnRunTestLoadAsync_Click" Grid.Column="1" Content="Run test load async" Margin="2" />
+            <Button x:Name="btnRunTestAsync" Click="btnRunTestAsync_Click" Grid.Column="2" Content="Run test async" Margin="2" />
+            <ProgressBar x:Name="pbProgress" Grid.Column="3" IsIndeterminate="True" Margin="2" />
+        </Grid>
+        
+        <TextBox Grid.Row="1" x:Name="tbResult" VerticalScrollBarVisibility="Visible" FontFamily="Consolas" FontSize="9pt" />
+
+    </Grid>
+</Window>

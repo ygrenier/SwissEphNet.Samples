@@ -73,3 +73,8 @@ this progress bar don't move because the test run in the main thread. For
 the last case, the progress bar is animated that indicates the main thread
 is not blocked.
 
+## Project SwissEphNet.Samples.WPF46
+
+WPF application in .Net 4.6.
+
+Works exactly like the WinForms sample.
