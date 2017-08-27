@@ -94,3 +94,9 @@ tests because the files are read as async:
 - **Run test async**: this test use the `UwpTestProvider`
 and is run in a task so in an async mode
 
+## Project SwissEphNet.Samples.Universal
+
+Windows 8.1 + WindowsPhone 8.1 applications.
+
+Works like UWP application.
+

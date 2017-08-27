@@ -1,13 +1,14 @@
 ﻿<Page
-    x:Class="SwissEphNet.Samples.UWP.MainPage"
+    x:Class="SwissEphNet.Samples.Universal.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SwissEphNet.Samples.UWP"
+    xmlns:local="using:SwissEphNet.Samples.Universal"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition />
@@ -15,8 +16,8 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120" />
-                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="150" />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Button x:Name="btnRunTest" Click="btnRunTest_Click" Content="Run test" Margin="2" HorizontalAlignment="Stretch" />
@@ -24,7 +25,7 @@
             <ProgressBar x:Name="pbProgress" Grid.Column="2" IsIndeterminate="True" Margin="2" />
         </Grid>
 
-        <TextBox Grid.Row="1" x:Name="tbResult" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible" FontFamily="Consolas" FontSize="12pt" AcceptsReturn="True" IsReadOnly="True" />
+        <TextBox Grid.Row="1" x:Name="tbResult" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible" FontFamily="Consolas" FontSize="12pt" AcceptsReturn="True" VerticalAlignment="Stretch" IsReadOnly="True" />
 
     </Grid>
 </Page>
