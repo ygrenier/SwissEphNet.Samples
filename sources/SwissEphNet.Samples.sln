@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataFiles", "DataFiles", "{
 	ProjectSection(SolutionItems) = preProject
 		DataFiles\seasnam.txt = DataFiles\seasnam.txt
 		DataFiles\sedeltat.txt = DataFiles\sedeltat.txt
+		DataFiles\semo_18.se1 = DataFiles\semo_18.se1
+		DataFiles\sepl_18.se1 = DataFiles\sepl_18.se1
 	EndProjectSection
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SwissEphNet.Samples.Shared", "SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.shproj", "{1571E34F-52DC-4946-9BFF-3E4A2D850EEC}"

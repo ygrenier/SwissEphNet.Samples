@@ -25,7 +25,7 @@ namespace SwissEphNet.Samples
         public uint LongitudeDeg { get; set; } = 8;
         public uint LongitudeMin { get; set; } = 33;
         public uint LongitudeSec { get; set; } = 0;
-        public LongitudeType LogitudeType { get; set; } = LongitudeType.East;
+        public LongitudeType LongitudeType { get; set; } = LongitudeType.East;
         public uint LatitudeDeg { get; set; } = 47;
         public uint LatitudeMin { get; set; } = 23;
         public uint LatitudeSec { get; set; } = 0;
