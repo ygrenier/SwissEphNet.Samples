@@ -22,9 +22,12 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SwissEphNet.Samples.Shared"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissEphNet.Samples.ConsoleNet46", "SwissEphNet.Samples.ConsoleNet46\SwissEphNet.Samples.ConsoleNet46.csproj", "{E3005677-5709-4B1D-ADD5-E8CB872B4B87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissEphNet.Samples.WinForms46", "SwissEphNet.Samples.WinForms46\SwissEphNet.Samples.WinForms46.csproj", "{DF42B472-BA2D-4F55-A73B-825059B232BA}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{1571e34f-52dc-4946-9bff-3e4a2d850eec}*SharedItemsImports = 13
+		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{df42b472-ba2d-4f55-a73b-825059b232ba}*SharedItemsImports = 4
 		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{e3005677-5709-4b1d-add5-e8cb872b4b87}*SharedItemsImports = 4
 		SwissEphNet.Samples.Shared\SwissEphNet.Samples.Shared.projitems*{fd457e6e-debb-4e14-8cae-375b822e751a}*SharedItemsImports = 4
 	EndGlobalSection
@@ -41,6 +44,10 @@ Global
 		{E3005677-5709-4B1D-ADD5-E8CB872B4B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3005677-5709-4B1D-ADD5-E8CB872B4B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3005677-5709-4B1D-ADD5-E8CB872B4B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF42B472-BA2D-4F55-A73B-825059B232BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF42B472-BA2D-4F55-A73B-825059B232BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF42B472-BA2D-4F55-A73B-825059B232BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF42B472-BA2D-4F55-A73B-825059B232BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

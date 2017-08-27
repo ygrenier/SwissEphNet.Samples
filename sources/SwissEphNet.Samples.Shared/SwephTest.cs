@@ -670,6 +670,8 @@ namespace SwissEphNet.Samples
             sw.Stop();
             result.TestDelay = sw.Elapsed;
             do_print(Provider.Output, $"\n\nCalculation time: {result.TestDelay}\n");
+            Provider.Output.Flush();
+            Provider.Debug.Flush();
             return result;
         }
 

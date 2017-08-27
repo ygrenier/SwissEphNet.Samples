@@ -36,5 +36,10 @@ The `Net40TestProvider` read the data files from the folder.
 
 Console application in .Net 4.6.
 
-Work like the SwissEphNet.Samples.ConsoleNet40 project.
+Works like the SwissEphNet.Samples.ConsoleNet40 project.
 
+## Project SwissEphNet.Samples.WinForms46
+
+WinForms application in .Net 4.6.
+
+Works like the console samples for the files.
